@@ -3,12 +3,13 @@
 import pygame
 
 from code.menu import Menu
+from const import WINDOW_WIDTH, WINDOW_HEIGHT
 
 
 class Game:
     def __init__(self):
         pygame.init()
-        self.window = pygame.display.set_mode(size=(600, 400))
+        self.window = pygame.display.set_mode(size=(WINDOW_WIDTH, WINDOW_HEIGHT))
 
     def run(self):
 
@@ -18,9 +19,3 @@ class Game:
             pass
 
 
-
-            # check for all events
-            # for event in pygame.event.get():
-            #    if event.type == pygame.QUIT:
-            #        pygame.QUIT()  # close Window
-            #        quit()  # end pygame
